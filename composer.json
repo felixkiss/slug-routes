@@ -1,0 +1,20 @@
+{
+    "name": "felixkiss/slug-routes",
+    "description": "",
+    "authors": [
+        {
+            "name": "Felix Kiss",
+            "email": "felix@felixkiss.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Felixkiss\\SlugRoutes": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
