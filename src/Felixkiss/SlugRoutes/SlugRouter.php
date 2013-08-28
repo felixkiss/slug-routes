@@ -1,6 +1,7 @@
 <?php namespace Felixkiss\SlugRoutes;
 
 use Illuminate\Routing\Router;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class SlugRouter extends Router
 {
