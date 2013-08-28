@@ -1,6 +1,9 @@
 {
     "name": "felixkiss/slug-routes",
     "description": "Laravel 4: Slug-aware Route Model Binding",
+    "keywords": ["laravel", "slug"],
+    "homepage": "https://github.com/felixkiss/slug-routes",
+    "license": "MIT",
     "authors": [
         {
             "name": "Felix Kiss",
