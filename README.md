@@ -17,7 +17,7 @@ In your `composer.json` file:
 {
     "require": {
         "laravel/framework": "4.0.*",
-        "felixkiss/slug-routes"
+        "felixkiss/slug-routes": "dev-master"
     }
 }
 ```
