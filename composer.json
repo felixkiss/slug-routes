@@ -1,6 +1,6 @@
 {
     "name": "felixkiss/slug-routes",
-    "description": "",
+    "description": "Laravel 4: Slug-aware Route Model Binding",
     "authors": [
         {
             "name": "Felix Kiss",
