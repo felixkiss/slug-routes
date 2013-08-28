@@ -6,7 +6,7 @@ class SlugRouter extends Router
 {
     public function model($key, $class, Closure $callback = null)
     {
-        return $this->bind($key, function($value) use ($class)
+        return $this->bind($key, function($value) use ($class, $callback)
         {
             if (is_null($value)) return null;
 
