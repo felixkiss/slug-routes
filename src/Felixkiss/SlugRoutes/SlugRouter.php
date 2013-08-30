@@ -5,9 +5,9 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class SlugRouter extends Router
 {
-    public function model($key, $class, Closure $callback = null)
+    public function model($key, $class, Closure $callback = null, $forceId = false)
     {
-        return $this->bind($key, function($value) use ($class, $callback)
+        return $this->bind($key, function($value) use ($class, $callback, $forceId)
         {
             if (is_null($value)) return null;
 
@@ -16,7 +16,7 @@ class SlugRouter extends Router
             // throw a not found exception otherwise we will return the instance.
             $model = new $class;
 
-            if($model instanceof SluggableInterface)
+            if($forceId === false && $model instanceof SluggableInterface)
             {
                 $model = $model->where($model->getSlugIdentifier(), $value)->first();
             }
